@@ -1,4 +1,5 @@
 // Began at around 2:30 at night.
+// Stopped at 3:30(I'm tired, also programming in C, from ground-up is time-consuming :( ).
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -62,7 +63,7 @@ int main()
 }
 
 /*
-    I initially had a conditional statement at the end of the end of the do-while loop at lOC 65 `while (size < 2 || typeof(size) != int)`,
+    I initially had a conditional statement at the end of the end of the do-while loop at lOC 37 `while (size < 2 || typeof(size) != int)`,
     but then I realized that I need not check the type of 'size' variable since that job is done by 'scanf' function. 
-    I had also wrapped LOCs 78 and 79 in do-while (type != int); but then later I rectified it but removing it.
+    I had also wrapped LOCs 43 and 44 in do-while (type != int); but then later I rectified it but removing it.
 */
