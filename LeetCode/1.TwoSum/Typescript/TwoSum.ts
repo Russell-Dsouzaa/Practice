@@ -23,7 +23,7 @@ function main() {
     var array1 : number[] = [1,2,3,4,5];
     var target : number = 9;
 
-    var result = TwoSum(array1,target);
+    var result : number | number[]= TwoSum(array1,target);
 
     if (result == (-1)) {
         console.log("No two array elements add up to the target");
