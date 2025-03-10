@@ -32,7 +32,7 @@ function (r : string) : Number {
 function main() : void {  // I'm not sure what return datatype to put here, since main() is not really returing a value (or is it ? is it returing exit value's like 0 or 1, as C programs do ? idk tbh).
     var RomanNumeral  : string = prompt("Enter a combination of the following characters I,V,X,L,C,D,M : ");
 
-    var result = RomanToInteger(RomanNumeral);
+    var result  : number = RomanToInteger(RomanNumeral);
 
     console.log(`The decimal equivalent of ${RomanNumeral} is ${result}`);
 }

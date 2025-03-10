@@ -8,7 +8,7 @@ function RomanToInteger(r) {
 
     var result = 0;
 
-    const RtoI = {      // here, the keys don't necessarily have to be in quotation marks. In case there is a space or a special cahracter in the string, then we need to put quotation marks compulsory, so that when we access the object's elements, no error occurs. eg :- RtoI["str with space"] works fine while RtoI[str with space] raises an error.
+    const RtoI = {      // here, the keys don't necessarily have to be in quotation marks. In case there is a space or a special character in the string, then we need to put quotation marks compulsory, so that when we access the object's elements, no error occurs. eg :- RtoI["str with space"] works fine while RtoI[str with space] raises an error.
         I : 1,
         V : 5,
         X : 10,

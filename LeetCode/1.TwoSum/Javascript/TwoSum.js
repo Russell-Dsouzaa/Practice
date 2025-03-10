@@ -38,5 +38,5 @@ main();
     prompt() does not work in node's default environment. It works as expected in browser environment. 
     To make it work in out VSCode, we need to follow the following steps :
         1. run `npm install prompt-sync` in the terminal
-        2. include the following LOC in the .js file, preferrably at teh beginning of the file, `const prompt = require('prompt-sync)();`
+        2. include the following LOC in the .js file, preferrably at the beginning of the file, `const prompt = require('prompt-sync)();`
 */
