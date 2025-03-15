@@ -7,7 +7,7 @@
 
 // sadly, I couldn't find a way to replicate the solution which I used in the JS version of this Leetcode problem.
 
-// Nevermind, this works. I had to run `npm run prompt-sync` in the terminal. 
+// Nevermind, this works. I had to run `npm run prompt-sync` in the terminal.   (is it npm install prompt-sync /or/ npm run prompt-sync ?)
 
 import * as PromptSync from 'prompt-sync'
 
