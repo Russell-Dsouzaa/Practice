@@ -21,6 +21,13 @@ function Smash(words) {
     }
 
     return result;
+
+    /*
+
+    alternative method :-
+        return words.join(" ");
+
+    */
 }
 
 main();

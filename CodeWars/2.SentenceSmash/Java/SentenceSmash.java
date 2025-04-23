@@ -25,5 +25,18 @@ public class SentenceSmash {
 
     public static String Smash(String[] words) {
         return String.join(" ",words);
+
+        /*
+        
+        alternative method :-
+            String resutl = "";
+
+            for (String s : words) {
+                result = result + " " + s;
+            }
+
+            return result.trim();
+
+        */
     }
 }
