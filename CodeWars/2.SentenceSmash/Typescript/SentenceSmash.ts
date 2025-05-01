@@ -15,7 +15,7 @@ function main() {
 }
 
 function Smash(words : string[]) {
-    var result = "";
+    var result : string = "";
 
     for (let i of words) {
         result = result + " " + i;

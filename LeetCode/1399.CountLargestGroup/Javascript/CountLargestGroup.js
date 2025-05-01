@@ -51,3 +51,11 @@ main();
 /* My idea was to run a for loop iterating from 1 to n, and for each of these values, we calculate the sum of their digits. We then populate the 'count' object
 with the sums and their frequencies. After we have key-value pairs of sums and their frequencies, we find the highest frequency in 'count'. After doing that, we 
 check how many times the highest frequency is repeated in the 'count' object. EZ I solved it on my own btw(i had to refer to stack overflow on how to iterate the values of an object tho) */
+
+/* 
+Alternative Method :-
+
+In the previous method, we convert the number into a string and then add each string element to the 'tempSum' variable after converting each of those elements 
+to Number datatype. In our alternative method, instead of converting the number into a string, we keep it as a Number, we then put it into a while loop and 
+keep adding the unit's place digit to tempSum until the number is 0 or less than it.
+*/
