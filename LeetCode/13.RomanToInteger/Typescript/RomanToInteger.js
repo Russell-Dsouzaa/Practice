@@ -28,7 +28,7 @@ function RomanToInteger(r) {
 }
 function main() {
     var RomanNumeral = prompt("Enter a combination of the following characters I,V,X,L,C,D,M : ");
-    var result = RomanToInteger(RomanNumeral.toUpperCase()); // if we use 'number' instead of 'Number' to specify variable datatype, it raises an error. This is because Number is a wrapper class while number is primitive data-type.
+    var result = RomanToInteger(RomanNumeral.toUpperCase());
     console.log("The decimal equivalent of ".concat(RomanNumeral, " is ").concat(result));
 }
 main();

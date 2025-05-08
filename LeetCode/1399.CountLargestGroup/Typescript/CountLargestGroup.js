@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var PromptSync = require("prompt-sync");
 var prompt = PromptSync();
 function main() {
-    var num = Number(prompt("Enter an Integer")); // if we plan on to use the string method(refer to the javascript solution), we count remove the Number() typecast from this LOC
+    var num = Number(prompt("Enter an Integer : ")); // if we plan on to use the string method(refer to the javascript solution), we count remove the Number() typecast from this LOC
     var result = CLG(num);
     console.log(result);
 }
@@ -22,10 +22,11 @@ function CLG(num) {
             map[tempSum] = 1;
         }
     }
-    var highestCount = Math.max.apply(Math, Object.values(map));
-    for (var _i = 0, _a = Object.keys(map); _i < _a.length; _i++) {
+    var highestCount = Math.max.apply(Math, Object.values(map)); // We use the spread operator because Math.max() expects an multiple inputs. This is not to be 
+    // confused with an array. eg:- Math.max([1,2,3,4]) INVALID, Math.max(1,2,3,4); VALID
+    for (var _i = 0, _a = Object.values(map); _i < _a.length; _i++) {
         var i = _a[_i];
-        if (map[i] === highestCount) {
+        if (i === highestCount) {
             result++;
         }
     }
