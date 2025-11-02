@@ -24,7 +24,7 @@ function TwoSum(arr1,target) {
     const map = {};
 
     for (let i = 0;i < arr1.length;i++) {
-        if (map[target - arr1[i]]) {
+        if ((target - arr1[i]) in map) {          // map[target - nums[i]] within if conditional statement won't work as expected when theee output of theee key-value pair is 0.   
             return [map[target - arr1[i]],i];
         } else {
             map[arr1[i]] = i;
@@ -35,3 +35,8 @@ function TwoSum(arr1,target) {
 }
 
 main();
+
+/*
+    At LOC 27, using map[target - nums[i]] within if statement doesn't work as expected. Because this expression by default performs normal comparison(not strict comparison ===).
+    So, for arr1 = [2,7,11,15] and target = 9, during second iteration of the for loop, target - arr1[i] return 0. And if(0) return false since 0 is a falsy value.
+*/
