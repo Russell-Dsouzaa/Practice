@@ -101,4 +101,9 @@ Learnings :-
     1. Let's say there are two variables 'a' & 'b' such that, a : number | null while b : number. This would raise an error since tsc would
     say that "there's a possibility that b could store 'null" but you haven't typed it as null, you only typed it as 'number'.
     Hence, we need to have the exact same type-check of the variables which we plan on storing in 'current'. If They mis-match, tsc raises an error.
+
+    2. difference between new1 and new1.head :- let's say there exists a LinkedList such as : head -> null , size = 0. Now, after appending 3 nodes, it becomes :
+    head -> 30 -> 2 -> 15 -> null. so, new1 refers to the 'head' not the actual first node of the LinkedList while new1.head refers to the first node of the
+    Linked List. In our program, we pass new1.head because the function expects the first node of the LinkedList. But keep in mind, we cannot use .append .remove
+    etc on new1.head. These methods are only for new1
 */ 
