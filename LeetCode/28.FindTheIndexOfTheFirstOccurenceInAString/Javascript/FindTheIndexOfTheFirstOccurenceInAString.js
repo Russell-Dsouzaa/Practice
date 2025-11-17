@@ -57,7 +57,7 @@ function firstOccurence(haystack,needle) {
 
     /* alternative method is to use .indexOf() array method
 
-        return arr1.indexOf(needle);    // if successful, return the index of the first element of the first occurence, -1 otherwise
+        return arr1.indexOf(needle);    // if successful, return the index of the first element of the first occurence(match), -1 otherwise
 
     */
 }
@@ -70,3 +70,15 @@ function main() {
 }
 
 main();
+
+/*
+Learnings :-
+
+    1. .indexOf() is an array method which checks for a substring within a string. If present, it returns the index of the first element of the 
+    very first occurence(match), -1 otherwise.
+
+    2. In JS, we could change .length property's value to mutate the original array. For example :- arrr1 = [1,2,3,4,5]; if we change arr1.length = 3; then the 
+    arr1 becomes [1,2,3]. If we change arr1.length = 7; then the arr1 becomes [1,2,3,4,5,,] (where the array expands and has 2 empty spots). Note :- these spots 
+    are not 'undefined', instead they're empty()google about this 'empty not undefined' thing, as in, what would be printed  if we index into one of these
+    'empty' spots?) (num, checked it, it prints 'undefined')
+*/
