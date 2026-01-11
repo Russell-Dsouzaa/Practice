@@ -27,7 +27,9 @@ function main() : void {
         prices.push(Number(prompt(`Enter the ${i + 1}th element of the array : `)));
     }
 
-    console.log(`Original array : ${prices} \n Final Array : ${finalPrices(prices)}`);
+    var result : number[] = finalPrices(prices);
+
+    console.log(`Original array : ${prices} \n Final Array : ${finalPrices(result)}`);
 }
 
 main();
