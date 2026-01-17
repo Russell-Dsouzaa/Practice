@@ -38,7 +38,11 @@ function main() {
     console.log("After rotating the array : " + nums);
 }
 
-main();
+if (require.main === module) {
+    main();
+}
+
+module.exports = rotate;
 
 /*
 Learnings :-
