@@ -138,7 +138,11 @@ function main() {
     console.log(`minimum and maximum distance between critical points are : ${result}`);
 }
 
-main();
+if (require.main === module) {
+    main();
+}
+
+module.exports = { Node, LinkedList };
 
 /*
 Learnings :- 
