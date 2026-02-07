@@ -1,5 +1,5 @@
 import * as PromptSync from 'prompt-sync';
-const prompt = PromptSync({sigint : true});
+const prompt : any = PromptSync({sigint : true});
 
 function solution(num1 : number) : number {
     if (num1 < 0) {
