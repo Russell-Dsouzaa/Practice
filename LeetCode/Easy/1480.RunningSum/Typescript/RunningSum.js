@@ -15,9 +15,12 @@ function main() {
         arr.push(Number(prompt("Enter the ".concat(i + 1, "th element of the array : "))));
     }
     var result = runningSum(arr);
-    console.log("Original array : ".concat(arr, " \n Running Sum of it : ").concat(result));
+    console.log("Original array : ".concat(arr, " \n Running Sum of it : ").concat(result)); // original and runningSum arrays both are being printed the same. To fix this, call the runingSum() function at LOC 23 inplace of 'result' (just as we did in the Javascript solution)
 }
-main();
+if (require.main === module) {
+    main();
+}
+exports.default = runningSum;
 /*
 Learnings :-
 

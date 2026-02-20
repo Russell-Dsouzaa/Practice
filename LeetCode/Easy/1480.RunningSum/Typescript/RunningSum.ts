@@ -23,7 +23,11 @@ function main() : void {
     console.log(`Original array : ${arr} \n Running Sum of it : ${result}`);  // original and runningSum arrays both are being printed the same. To fix this, call the runingSum() function at LOC 23 inplace of 'result' (just as we did in the Javascript solution)
 }
 
-main();
+if (require.main === module) {
+    main();
+}
+
+export default runningSum;
 
 /*
 Learnings :-

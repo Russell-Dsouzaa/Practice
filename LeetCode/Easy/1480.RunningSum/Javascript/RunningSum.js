@@ -20,7 +20,11 @@ function main() {
     console.log(`Original array : ${arr} \n Running Sum of it : ${runningSum(arr)}`);
 }
 
-main();
+if (require.main === module) {
+    main();
+}
+
+module.exports = runningSum;
 
 /*
 Learnings :-
