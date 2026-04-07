@@ -1,7 +1,7 @@
 import * as PromptSync from 'prompt-sync';
 const prompt : any = PromptSync({sig : true});
 
-function clock(h,m,s) {
+function clock(h,m,s) : number {
     return ((h * 3600) + (m * 60) + s) * 1000;
 }
 
